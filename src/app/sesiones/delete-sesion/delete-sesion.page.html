@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Delete sesion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Eliminar sesion</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>ID: {{ sesion.id }}</ion-card-subtitle>
+      <ion-card-title>Realmente desea eliminar la sesion: {{ sesion.nombresesion }} ?</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+
+      <ion-button (click)="eliminarSesion()" expand="block" color="danger">Eliminar</ion-button>
+
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>

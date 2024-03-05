@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Detail cliente</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">detailCliente</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>ID: {{ cliente.id }}</ion-card-subtitle>
+      <ion-card-title>Nombre: {{ cliente.nombre }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <strong>Correo: {{ cliente.correo }}</strong> <br>
+      <strong>Contraseña: {{ cliente.password }}</strong>
+    </ion-card-content>
+    <ion-button [routerLink]="['/update-cliente',cliente.id]" color="warning"><ion-icon name="create"></ion-icon></ion-button>
+    <ion-button [routerLink]="['/delete-cliente',cliente.id]" color="danger"><ion-icon name="trash"></ion-icon></ion-button>
+  </ion-card>
+
+</ion-content>

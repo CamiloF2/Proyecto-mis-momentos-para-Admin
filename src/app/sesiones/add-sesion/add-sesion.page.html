@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="Volver"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Add sesion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Add sesion</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <form>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Nombre Sesion</ion-label>
+      <ion-input type="text" name="txNombreSesion" [(ngModel)]="newSesion.nombresesion" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Descripcion</ion-label>
+      <ion-input type="text" name="txDescripcion" [(ngModel)]="newSesion.descripcion" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Imagen (url)</ion-label>
+      <ion-input type="text" name="txImagen" [(ngModel)]="newSesion.imagen" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Precio</ion-label>
+      <ion-input type="text" name="txPrecio" [(ngModel)]="newSesion.precio" required></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+      <ion-button (click)="crearSesion()" expand="block" color="success">Agregar</ion-button>
+      </ion-col>
+    </ion-row>
+
+  </form>
+</ion-content>

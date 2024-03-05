@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">inicio</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-button expand="block" [routerLink]="['/menu-clientes']">CRUD Clientes</ion-button>
+  <ion-button expand="block" [routerLink]="['/menu-sesiones']">CRUD Sesiones</ion-button>
+  <ion-button expand="block" [routerLink]="['/menu-fotografos']">CRUD Fotografos</ion-button>
+  <ion-button expand="block" [routerLink]="['/menu-reservas']"> CRUD Reservas</ion-button>
+</ion-content>

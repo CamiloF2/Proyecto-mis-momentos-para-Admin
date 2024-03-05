@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Menú Fotografos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Menú Fotografos</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-button expand="block" [routerLink]="['/list-fotografos']">Listar</ion-button>
+  <ion-button expand="block" [routerLink]="['/add-fotografos']">Agregar</ion-button>
+
+</ion-content>

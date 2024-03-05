@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>List reservas</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item *ngFor="let g of reservas; let indexArray = index"[routerLink]="['/detail-reservas',g.id]">
+      <ion-label>
+        <h1>Nombre: {{ g.nombreReservante }}</h1>
+        <h1>Correo: {{g.correoReservante}}</h1>
+        <h1>Tipo sesion: {{ g.sesionReservada }}</h1>
+        <p>ID: {{ g.id }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

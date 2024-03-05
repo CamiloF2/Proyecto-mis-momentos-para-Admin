@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Listar sesiones</ion-title>
+    <ion-button slot="end" [routerLink]="['/add-sesion']"> Agregar </ion-button>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-list>
+  <ion-item *ngFor="let g of sesiones; let indexArray = index"[routerLink]="['/detail-sesion',g.id]">
+    <ion-label>
+      <h1>{{ g.nombresesion }}</h1>
+      <p>ID: {{ g.id }}</p>
+      <p>Precio: {{ g.precio }}</p>
+    </ion-label>
+    <ion-label><img src="{{ g.imagen }}" alt=""></ion-label>
+  </ion-item>
+</ion-list>
+</ion-content>

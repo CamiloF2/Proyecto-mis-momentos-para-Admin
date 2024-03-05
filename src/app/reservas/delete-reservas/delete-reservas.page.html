@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Eliminar reserva</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Eliminar reserva</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>ID: {{ reserva.id }}</ion-card-subtitle>
+      <ion-card-title>Realmente desea eliminar la reserva del cliente: {{ reserva.nombreReservante }} 
+        cuyo servicio solicitado es: {{ reserva.sesionReservada }}
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+
+      <ion-button (click)="eliminarReserva()" expand="block" color="danger">Eliminar</ion-button>
+
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>

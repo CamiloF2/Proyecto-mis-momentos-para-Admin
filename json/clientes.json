@@ -1,0 +1,108 @@
+{
+  "clientes": [
+    {
+      "id": 2,
+      "nombre": "segundo",
+      "correo": "segundo@gmail.com",
+      "password": "123"
+    },
+    {
+      "nombre": "Prueba",
+      "correo": "Prueba@gmail.com",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "nombre": "primero",
+      "correo": "primero@gmail.com",
+      "password": "123",
+      "id": 4
+    }
+  ],
+  "sesiones": [
+    {
+      "id": 1,
+      "nombresesion": "Estudio",
+      "descripcion": "Este servicio se realizará en nuestros estudios con una decoración dependiendo de la época del año (navidad, pascuas, año nuevo, halloween, fiestas patrias, etc)",
+      "imagen": "https://cdn.discordapp.com/attachments/1151612313644838963/1151615395220955277/image.png",
+      "precio": "20.000"
+    },
+    {
+      "id": 2,
+      "nombresesion": "BBBB",
+      "descripcion": "AAAAAbbb",
+      "imagen": "bbbb",
+      "precio": "bbbba"
+    },
+    {
+      "nombresesion": "default",
+      "descripcion": "test",
+      "imagen": "https://cdn.avalos.sv/wp-content/uploads/default-featured-image.png",
+      "precio": "30000",
+      "id": 3
+    }
+  ],
+  "usuarioAdmin": [
+    {
+      "id": 1,
+      "nombreAdmin": "admin",
+      "password": "123",
+      "correo": "admin@hotmail.com"
+    }
+  ],
+  "fotografos": [
+    {
+      "id": 1,
+      "nombreFotografo": "pedro",
+      "correoFotografo": "pedro@gmail.com",
+      "password": "123"
+    },
+    {
+      "nombreFotografo": "aaa",
+      "correoFotografo": "aaa",
+      "password": "aaa",
+      "id": 3
+    }
+  ],
+  "solicitudes": [
+    {
+      "id": 1,
+      "nombreUsuarioSolicitante": "primero",
+      "contrasenaActualUsuarioSolicitante": "123",
+      "motivo": "pq si",
+      "cambiar": "correo"
+    },
+    {
+      "nombreUsuarioSolicitante": "1111",
+      "contrasenaActualSolicitante": "11111",
+      "motivo": "11111",
+      "cambiar": "1111",
+      "id": 2
+    },
+    {
+      "nombreUsuarioSolicitante": "",
+      "contrasenaActualSolicitante": "",
+      "motivo": "",
+      "cambiar": "contraseña",
+      "id": 3
+    },
+    {
+      "nombreUsuarioSolicitante": "primero",
+      "contrasenaActualSolicitante": "123",
+      "motivo": "pq si",
+      "cambiar": "correo",
+      "id": 4
+    }
+  ],
+  "reservas": [
+    {
+      "id": 1,
+      "nombreReservante": "test",
+      "correoReservante": "test",
+      "fecha": "",
+      "comentarios": "",
+      "precio": "20000",
+      "sesionReservada": "test"
+    }
+  ]
+}

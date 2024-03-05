@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Menú Clientes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Menú clientes</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-button expand="block" [routerLink]="['/list-cliente']">Listar</ion-button>
+  <ion-button expand="block" [routerLink]="['/add-cliente']">Agregar</ion-button>
+
+</ion-content>

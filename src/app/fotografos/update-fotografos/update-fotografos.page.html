@@ -1,0 +1,60 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Update fotografos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Update fotografos</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <form>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input type="text" name="txNomber" [(ngModel)]="fotografo.nombreFotografo" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Correo</ion-label>
+      <ion-input type="text" name="txCorreo"  [(ngModel)]="fotografo.correoFotografo" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" name="txPassword" [(ngModel)]="fotografo.password" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Presentación</ion-label>
+      <ion-input name="txPresentacion" [(ngModel)]="fotografo.presentacion" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Imagen ejemplo 1</ion-label>
+      <ion-input name="tximg1" [(ngModel)]="fotografo.img1" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Imagen ejemplo 2</ion-label>
+      <ion-input name="tximg2" [(ngModel)]="fotografo.img2" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Imagen ejemplo 3</ion-label>
+      <ion-input name="tximg3" [(ngModel)]="fotografo.img3" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Años de experiencia</ion-label>
+      <ion-input name="txAniosDeExp" [(ngModel)]="fotografo.aniosDeExperiencia" required></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+      <ion-button  (click)="updateFotografo()" expand="block" color="success">Actualizar</ion-button>
+      </ion-col>
+    </ion-row>
+    
+  </form>
+
+</ion-content>

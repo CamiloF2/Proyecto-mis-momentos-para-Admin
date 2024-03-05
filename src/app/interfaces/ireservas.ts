@@ -1,0 +1,9 @@
+export interface IReservas {
+    id:Number
+    nombreReservante:String
+    correoReservante:String
+    fecha:String
+    comentarios:String
+    precio:String
+    sesionReservada:String
+}
